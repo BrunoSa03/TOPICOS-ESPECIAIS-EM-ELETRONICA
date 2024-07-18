@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Projeto Final | Relatório Final</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Projeto Final | Relatório Final" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Projeto Final | Relatório Final" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Bruno Santos de Aguiar" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="soldagem-de-circuitos.html"/>
+<link rel="next" href="conclusão.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i><b>1.1</b> Usage</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.2</b> Render book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i><b>1.3</b> Preview book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introdução.html"><a href="introdução.html"><i class="fa fa-check"></i><b>2</b> Introdução</a></li>
+<li class="chapter" data-level="3" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html"><i class="fa fa-check"></i><b>3</b> Máquina a Laser</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#softwares-utilizados"><i class="fa fa-check"></i><b>3.1</b> Softwares Utilizados:</a></li>
+<li class="chapter" data-level="3.2" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#execução-do-trabalho"><i class="fa fa-check"></i><b>3.2</b> Execução do Trabalho:</a></li>
+<li class="chapter" data-level="3.3" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#materiais-e-ajustes"><i class="fa fa-check"></i><b>3.3</b> Materiais e Ajustes:</a></li>
+<li class="chapter" data-level="3.4" data-path="máquina-a-laser.html"><a href="máquina-a-laser.html#medidas-de-segurança"><i class="fa fa-check"></i><b>3.4</b> Medidas de Segurança</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="impressora-3d.html"><a href="impressora-3d.html"><i class="fa fa-check"></i><b>4</b> Impressora 3D</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="impressora-3d.html"><a href="impressora-3d.html#softwares-utilizados-1"><i class="fa fa-check"></i><b>4.1</b> Softwares Utilizados:</a></li>
+<li class="chapter" data-level="4.2" data-path="impressora-3d.html"><a href="impressora-3d.html#material-utilizável"><i class="fa fa-check"></i><b>4.2</b> Material Utilizável:</a></li>
+<li class="chapter" data-level="4.3" data-path="impressora-3d.html"><a href="impressora-3d.html#medidas-de-segurança-1"><i class="fa fa-check"></i><b>4.3</b> Medidas de Segurança:</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="impressora-para-corte-em-adesivos.html"><a href="impressora-para-corte-em-adesivos.html"><i class="fa fa-check"></i><b>5</b> Impressora para Corte em Adesivos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="impressora-para-corte-em-adesivos.html"><a href="impressora-para-corte-em-adesivos.html#material-utilizável-1"><i class="fa fa-check"></i><b>5.1</b> Material Utilizável:</a></li>
+<li class="chapter" data-level="5.2" data-path="impressora-para-corte-em-adesivos.html"><a href="impressora-para-corte-em-adesivos.html#medidas-de-segurança-2"><i class="fa fa-check"></i><b>5.2</b> Medidas de Segurança:</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="fresadora.html"><a href="fresadora.html"><i class="fa fa-check"></i><b>6</b> Fresadora</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="fresadora.html"><a href="fresadora.html#materiais-utilizáveis"><i class="fa fa-check"></i><b>6.1</b> Materiais Utilizáveis:</a></li>
+<li class="chapter" data-level="6.2" data-path="fresadora.html"><a href="fresadora.html#medidas-de-segurança-3"><i class="fa fa-check"></i><b>6.2</b> Medidas de Segurança:</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="fabricação-de-placas-de-circuito-eletrônico.html"><a href="fabricação-de-placas-de-circuito-eletrônico.html"><i class="fa fa-check"></i><b>7</b> Fabricação de Placas de Circuito Eletrônico</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="fabricação-de-placas-de-circuito-eletrônico.html"><a href="fabricação-de-placas-de-circuito-eletrônico.html#materiais-e-ferramentas-utilizáveis"><i class="fa fa-check"></i><b>7.1</b> Materiais e Ferramentas Utilizáveis:</a></li>
+<li class="chapter" data-level="7.2" data-path="fabricação-de-placas-de-circuito-eletrônico.html"><a href="fabricação-de-placas-de-circuito-eletrônico.html#medidas-de-segurança-4"><i class="fa fa-check"></i><b>7.2</b> Medidas de Segurança:</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="soldagem-de-circuitos.html"><a href="soldagem-de-circuitos.html"><i class="fa fa-check"></i><b>8</b> Soldagem de Circuitos</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="soldagem-de-circuitos.html"><a href="soldagem-de-circuitos.html#ferramentas-e-materiais-utilizáveis"><i class="fa fa-check"></i><b>8.1</b> Ferramentas e Materiais Utilizáveis:</a></li>
+<li class="chapter" data-level="8.2" data-path="soldagem-de-circuitos.html"><a href="soldagem-de-circuitos.html#medidas-de-segurança-5"><i class="fa fa-check"></i><b>8.2</b> Medidas de Segurança:</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final.html"><a href="projeto-final.html"><i class="fa fa-check"></i><b>9</b> Projeto Final</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final.html"><a href="projeto-final.html#elaboração"><i class="fa fa-check"></i><b>9.1</b> Elaboração</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="projeto-final.html"><a href="projeto-final.html#chassi"><i class="fa fa-check"></i><b>9.1.1</b> Chassi:</a></li>
+<li class="chapter" data-level="9.1.2" data-path="projeto-final.html"><a href="projeto-final.html#carcaça"><i class="fa fa-check"></i><b>9.1.2</b> Carcaça:</a></li>
+<li class="chapter" data-level="9.1.3" data-path="projeto-final.html"><a href="projeto-final.html#circuito"><i class="fa fa-check"></i><b>9.1.3</b> Circuito:</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="conclusão.html"><a href="conclusão.html"><i class="fa fa-check"></i><b>10</b> Conclusão</a></li>
+<li class="chapter" data-level="11" data-path="referências-bibliográficas.html"><a href="referências-bibliográficas.html"><i class="fa fa-check"></i><b>11</b> Referências Bibliográficas</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Relatório Final</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="projeto-final" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Projeto Final<a href="projeto-final.html#projeto-final" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Nesse projeto, apresentamos o desenvolvimento de um carro de controle remoto, utilizando diversas tecnologias e ferramentas de fabricação digital, como impressoras 3D e a laser, além de componentes eletrônicos programáveis. O objetivo foi criar um modelo funcional de um carro, aplicando os conhecimentos adquiridos na disciplina Tópicos Especiais em Eletrônica, focando na utilização de ferramentas disponível na integração de sistemas eletrônicos e contrução, baseado no design de um jeep, totalmente construído pelos autores, mediante testes e ajustes contínuos.</p>
+<div id="elaboração" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Elaboração<a href="projeto-final.html#elaboração" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para realizar a contrução do projeto foi realizado alguma etapas importantes para concluir e obter sucesso, utilizando os seguintes materiais e técnicas.</p>
+<div id="chassi" class="section level3 hasAnchor" number="9.1.1">
+<h3><span class="header-section-number">9.1.1</span> Chassi:<a href="projeto-final.html#chassi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Com um modelo encontado na internet, foi adaptada para o nosso projeto, foi utilizado PLA e impressora 3D para criar um chassi leve e resistente, depois impresso com parâmetros ajustados de acordo com espessura e temperatura para o filamento de PLA.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_02.jpeg" style="width:120mm" alt="Impressão do Chassi" />
+<div class="figcaption">Impressão do Chassi</div>
+</div>
+</div>
+<div id="carcaça" class="section level3 hasAnchor" number="9.1.2">
+<h3><span class="header-section-number">9.1.2</span> Carcaça:<a href="projeto-final.html#carcaça" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A construção da carcaça do carro, iniciou-se com um esboço manual. Este passo é de suma importancia para verificar se as dimensões e proporções esta de acordo com o chassi. Utilizando papel e lápis, um esboço foi criado com base de um carro jeep. Com o chassi em mãos foi permitido ajustes e uma melhor compreensão do formato da carcaça.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_Esbo%C3%A7o.jpeg" style="width:89mm" alt="Esboço" />
+<div class="figcaption">Esboço</div>
+</div>
+<p>Em seguida, usamos o esboço como guia, para criar o arquivo ao software AutoCAD.. No AutoCAD, o desenho com medidas exatas, garantindo que todas as dimensões sejam precisas e consistentes com o chassi do carro. Este modelo digital permite visualizar o design em 2D, facilitando a identificação de possíveis problemas e realizando ajustes necessários antes da produção física.</p>
+<p>Com o arquivo pronto, foi realizado o recorte utilizando a máquina a laser, e verificar se será preciso de algum ajustes e imprementações.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_corte.jpeg" style="width:133mm" alt="Recorte do protótipo" />
+<div class="figcaption">Recorte do protótipo</div>
+</div>
+<div class="float">
+<img src="Imagem/Projeto_Final_001.jpeg" style="width:133mm" alt="Recorte do protótipo" />
+<div class="figcaption">Recorte do protótipo</div>
+</div>
+<p>Com o protótipo pronto, foi possível fazer a montagem e verificar se a carcaça esta com todas as medidas devidamente adequada ao chassi, ao fazer o procedimento nescessário, foi realizado o corte no material final do projeto para carcaça.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_000.jpeg" style="width:133mm;height:100mm" alt="Montagem do Protótipo" />
+<div class="figcaption">Montagem do Protótipo</div>
+</div>
+<p>Ao verificar que está conforme o esperado, usamos MDF de 3 mm cortado a laser, ajustando a potência e a velocidade do laser para garantir cortes precisos e limpos, evitando queimaduras excessivas no material e finalmente terminado a carcaça do carro.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_002.jpeg" style="width:188mm" alt="Corte da carcaça" />
+<div class="figcaption">Corte da carcaça</div>
+</div>
+<div class="float">
+<img src="Imagem/Projeto_Final_004.jpeg" style="width:80mm" alt="Montagem da Carcaça" />
+<div class="figcaption">Montagem da Carcaça</div>
+</div>
+</div>
+<div id="circuito" class="section level3 hasAnchor" number="9.1.3">
+<h3><span class="header-section-number">9.1.3</span> Circuito:<a href="projeto-final.html#circuito" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Arduino Nano</p></li>
+<li><p>Jumpers</p></li>
+<li><p>Buzzer</p></li>
+<li><p>LEDs</p></li>
+<li><p>Resistores</p></li>
+<li><p>Capacitor</p></li>
+<li><p>Módulo Bluetooth</p></li>
+<li><p>Driver ponte H</p></li>
+<li><p>Bateria 18650</p></li>
+<li><p>Servo motor</p></li>
+<li><p>Motor DC</p></li>
+<li><p>protoboard</p></li>
+</ul>
+<p>O Arduino Nano foi programado para controlar os motores e receber comandos via Bluetooth. LEDs e o buzzer foram integrados ao circuito para indicar a sinalização visual e sonora funcionamento do carro. O servo motor foi utilizado para a direção, enquanto o motor DC foi responsável pela propulsão. Todos os componentes eletrônicos foram conectados em uma protoboard e realizando testes de continuidade para garantir que todas as conexões estivesse devidamente funcional, também foi realizado trabalho na estação de solda para soldar os jumper no driver ponte H garantido as conexões segura, assim podemos ver no circuito abaixo.</p>
+<div class="float">
+<img src="Imagem/Projeto_Final_Circuito.png" style="width:111mm" alt="Circuito" />
+<div class="figcaption">Circuito</div>
+</div>
+<p>Com base no circuito acima, realizamos a montagem na protoboard e foram efetuados ajustes na programação, montagem e a mecânica, assegurando que o carro pudesse ser controlado remotamente de maneira eficiente.</p>
+<div class="float">
+<img src="Imagem/Circuito_real.jpeg" style="width:159mm" alt="Circuito montado" />
+<div class="figcaption">Circuito montado</div>
+</div>
+<p>O projeto resultou em um carro de controle remoto, com um design robusto inspirado em um jeep. A combinação de tecnologias de fabricação digital permitiu a criação de componentes precisos e de alta qualidade. A integração dos componentes eletrônicos com a programação do Arduino Nano. Este trabalho demonstrou a viabilidade técnica do projeto e aprimorou as habilidades práticas dos autores em diversas áreas da engenharia e da fabricação digital.</p>
+<p><img src="Imagem/Final1.jpeg" style="width:77mm;height:100mm" /></p>
+<div class="float">
+<img src="Imagem/Final.jpeg" style="width:92mm" alt="Projeto final" />
+<div class="figcaption">Projeto final</div>
+</div>
+<p>A construção do carro de controle remoto foi uma experiência prática valiosa, permitindo a aplicação de conceitos teóricos em um projeto real. O uso de técnicas de fabricação digital, como impressão 3D e corte a laser, juntamente com a integração de componentes eletrônicos, demonstrou ser uma abordagem eficaz para a criação de projetos complexos e personalizados, infelizmente por algum problema ainda não identificado, o projeto não obteve funcionamento, mas com alguns conceitos para resolver e realizar a finalidade do projeto e obter êxodo no trabalho final.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="soldagem-de-circuitos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusão.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/08-Projeto.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
